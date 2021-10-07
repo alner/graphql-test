@@ -10,6 +10,10 @@ const typeDefs = gql`
   type Query {
     getTodos: [Todo!]
   }
+
+  type Mutation {
+    addTodo(title: String!, description: String): Todo
+  }
 `;
 
 //    getUser(id: ID): User
